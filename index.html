@@ -3,31 +3,471 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <title>index.html</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inter:wght@300;400;500;600&family=Oswald&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>main.html</title>
   </head>
   <body>
-    <!-- <header>
-      <img
-        class="logo"
-        src="https://www.wired.com/verso/static/wired/assets/logo-header.svg"
-        alt=""
-      />
+    <header id="container">
       <div class="navBar">
-        <ul>
-          <li href="./backChannel.html">BACKCHANNEL</li>
-          <li href="./business.html">BUSINESS</li>
-          <li href="./culture.html">CULTURE</li>
-          <li href="./gear.html">GEAR</li>
-          <select name="more" id="">
-            <option value="idea">idea</option>
-            <option value="science">science</option>
-            <option value="security">security</option>
-            <option value="murch">murch</option>
-          </select>
-          <input type="button" value="subscribe" />
+        <div class="navBar-item logo">
+          <img
+            src="https://magazine-b.com/web/baton/images/header_logo_white.svg"
+            alt=""
+            class="white-logo"
+          />
+          <!-- <img
+            src="https://magazine-b.com/web/baton/images/header_logo.svg"
+            alt=""
+            class="black-logo"
+          /> -->
+        </div>
+        <div class="navBar-item">
+          <a href="#">New</a>
+        </div>
+        <div class="navBar-item">
+          <a href="#">Magazine</a>
+        </div>
+        <div class="navBar-item">
+          <a href="#">Books</a>
+        </div>
+        <div class="navBar-item">
+          <a href="#">Goods&Tickets</a>
+        </div>
+        <div class="navBar-item">
+          <a href="#">Newletter</a>
+        </div>
+        <div class="navBar-item">
+          <a href="#">Index</a>
+        </div>
+        <div class="navBar-item">
+          <a href="#">Subscribe</a>
+        </div>
+      </div>
+      <div class="subNav">
+        <div class="subNav-menu">
+          <div class="subNav-item">
+            <a href="#">Search</a>
+          </div>
+          <div class="subNav-item">
+            <a href="#">Login</a>
+          </div>
+          <div class="subNav-item">
+            <a href="#">Cart[0]</a>
+          </div>
+          <div class="subNav-item">
+            <a href="#">KR</a>
+          </div>
+          <div class="subNav-item">
+            <a href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-first">
+      <div class="img-area">
+        <div class="back-img" id="image1">
+          <img
+            class="backImgs"
+            src="https://bmagazine.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/05/15043418/Banner_PC-3.png"
+            alt=""
+          />
+          <div class="text-area">
+            <p class="category">
+              <span class="category-1">MAGAZINE B</span>
+              <span class="category-2">ISSUE NO.96</span>
+            </p>
+            <h2 class="title">BUSAN</h2>
+            <p class="d-md-block">
+              바다와 산을 함께 품은 독특한 지형을 갖춘 부산은 국내 각지는 물론
+              동서양의 색채가 어우러진 코즈모폴리턴 도시로서의 면모를 앞세워<br />
+              부산국제영화제, 부산비엔날레와 지스타를 비롯한 세계적 행사 무대로
+              각인돼왔습니다.
+            </p>
+            <a
+              class="a-shop"
+              href="https://magazine-b.com/product/detail.html?product_no=354&cate_no=45"
+              class="more-info c-gray"
+              >SHOP NOW</a
+            >
+            <div class="swipe-num">
+              <h1 class="current-page">1</h1>
+              <h1 class="total-page">3</h1>
+            </div>
+          </div>
+        </div>
+        <div class="back-img" id="image2">
+          <img
+            class="backImgs"
+            src="https://bmagazine.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/05/10075509/Untitled-12-2.png"
+            alt=""
+          />
+          <div class="text-area">
+            <p class="category">
+              <span class="category-1">MAGAZINE F</span>
+              <span class="category-2">ISSUE NO.27</span>
+            </p>
+            <h2 class="title">FISH</h2>
+            <p class="d-md-block">
+              매거진 &lt;F&gt; 스물일곱 번째 이슈에는 생선이 해양 생물로서 지닌
+              의미는 물론 전통 수산업과 해안 지역의 경제 생태계,<br />
+              그리고 그에 대한 문제의식과 해법을 함께 고민하는 동시대의 노력을
+              담았습니다.
+            </p>
+            <a
+              class="a-shop"
+              href="/product/detail.html?product_no=344&amp;cate_no=45"
+              class="more-info c-gray"
+              >SHOP NOW</a
+            >
+            <div class="swipe-num">
+              <h1 class="current-page">2</h1>
+              <h1 class="total-page">3</h1>
+            </div>
+          </div>
+        </div>
+        
+        <div class="back-img" id="image3">
+          <img
+            class="backImgs"
+            src="https://bmagazine.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/05/10030215/%E3%85%81%E3%84%B4.png"
+            alt=""
+          />
+          <div class="text-area">
+            <p class="category">
+              <span class="category-1">MAGAZINE B</span>
+              <span class="category-2">ISSUE NO.95</span>
+            </p>
+            <h2 class="title">SPOTIFY</h2>
+            <p class="d-md-block">
+              전 세계 180여 개 국가에 진출한 스포티파이는 유저와 크리에이터가
+              공생하는 생태계 조성을 목표로,<br />
+              팟캐스트와 오디오북 등 다채로운 음성 콘텐츠를 제공하기 위한 노력을
+              꾸준히 이어오고 있습니다.
+            </p>
+            <a
+              class="a-shop"
+              href="/product/detail.html?product_no=342&amp;cate_no=44"
+              class="more-info c-gray"
+              >SHOP NOW</a
+            >
+            <div class="swipe-num">
+              <h1 class="current-page">3</h1>
+              <h1 class="total-page">3</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const images = ["image1", "image2", "image3"];
+
+        let currentImageIndex = 0;
+
+        function changeImage() {
+          for (let i = 0; i < images.length; i++) {
+            const imageId = images[i];
+            const imageElement = document.getElementById(imageId);
+
+            if (i === currentImageIndex) {
+              imageElement.style.display = "block";
+            } else {
+              imageElement.style.display = "none";
+            }
+          }
+
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        changeImage();
+
+        setInterval(changeImage, 3000);
+      </script>
+      <!-- <div class="swiper-scrollbar">
+        <div
+          class="swiper-scrollbar-drag"
+          style="
+            width: 402.333px;
+            transform: translate3d(0px, 0px, 0px);
+            transition-duration: 0ms;
+          "
+        ></div>
+      </div> -->
+    </section>
+    
+    <section class="section-main">
+      <div class="pc-title">
+        <h4 class="section-title">Shop</h4>
+        <ul class="section-menu" id="shop-menu">
+          <div class="sm1">
+            <li class="menu-item" data-cate-no="44">
+              <span class="active" id="anoGreen">Magazine B</span>
+            </li>
+            <li class="menu-item" data-cate-no="45">
+              <span id="yellow">Magazine F</span>
+            </li>
+          </div>
+          <div class="sm2">
+            <li class="menu-item" data-cate-no="47">
+              <span id="skyBlue">Fashion</span>
+            </li>
+            <li class="menu-item" data-cate-no="72">
+              <span id="green">Hospitality</span>
+            </li>
+          </div>
         </ul>
       </div>
-    </header> -->
+      <script>
+        // const magaB = document.getElementById("section-main");
+        const magaF = document.getElementById("section-main");
+        // const fashion = document.getElementById("section-main");
+        // const hospi = document.getElementById("section-main");
+
+        // magaB.addEventListener("click", (e) => {
+        //   document.body.style.backgroundColor = "#98c0c4";
+        // });
+        function changeColor(){
+          const changeId = document.getElementById("section-main");
+          
+        }
+        magaF.addEventListener("click", (e) => {
+          document.body.style.backgroundColor = "#f7e48e";
+        });
+        // fashion.addEventListener("click", (e) => {
+        //   document.body.style.backgroundColor = "#ced4e2";
+        // });
+        // hospi.addEventListener("click", (e) => {
+        //   document.body.style.backgroundColor = "#d1ffcc";
+        // });
+      </script>
+
+
+      <!-- section list -- MAGAZINE B -->
+      <div class="section-list">
+        <div class="section-item">
+        <div class="image">
+            <a href="/product/detail.html?product_no=289&amp;cate_no=44" class="link">
+              <img src="https://bmagazine.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/05/15043914/Index.png" alt="" class="max"></a>
+        </div>
+        <div class="content">
+            <span class="label-category">MAGAZINE B</span><span class="label issue-no">ISSUE NO.16</span>
+            <h4 class="title">
+                <a href="/product/detail.html?product_no=289&amp;cate_no=44" class="link">AESOP 2nd Edition</a>
+            </h4>
+            <p class="desc">
+              <div class="desc-item-fixed">
+                  <!-- <p class="desc-title">Description</p> -->
+                  <p>1987년 데니스 파피티스가 호주 멜버른에서 설립한 이솝은 첨단 과학 기술에 기초해 식물 유래 성분과 인공 성분을 균형 있게 배합한 스킨 케어 제품을 선보여왔습니다. 문학과 예술을 사랑하고, 코스메틱업계의 통상적 마케팅을 거부하는 이솝의 독립적 태도는 지역마다 각기 다른 모습으로 존재하는 매장에서 일관되게 느낄 수 있습니다. 2012년 브라질 태생 기업인 나투라앤코에 합병되면서 이솝은 브랜드 본연의 미학은 물론, 자발적으로 포뮬러를 개선해 고품질 제품과 지속 가능한 비전 등을 한층 진화한 형태로 선보이면서 브랜드 세계관의 공감대를 전 세계적으로 넓혀가는 중입니다.</p>
+              </div>
+              <div class="desc-item gift">
+            <a href="https://magazine-b.com/product/detail.html?product_no=348&amp;cate_no=57" class="btn-text"></a></div></p>
+          </div>
+          </div>
+          <div class="section-item">
+              <div class="image">
+                  <a href="/product/detail.html?product_no=139&amp;cate_no=44" class="link">
+                    <img class="ano-img" src="https://bmagazine.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/05/15043942/B_52.jpg" alt="" class="max"></a>
+              </div>
+              <div class="content">
+                  <span class="label-category">MAGAZINE B</span><span class="label issue-no">ISSUE NO.51</span>
+                  <h4 class="title">
+                      <a href="/product/detail.html?product_no=139&amp;cate_no=44" class="link">MR PORTER</a>
+                  </h4>
+                  <p class="desc"><div class="desc-item-fixed">
+                        <p>남성 전문 이커머스 미스터 포터는 럭셔리 쇼핑 경험을 온라이능로 옮겨오자는 아이디어에서 시작한 여성 이커머스 네타포르테의 자매 사이트로, 2011년 2월 영국 런던에서 시작했습니다. 쇼핑과 콘텐츠를 통합한 형식의 비지니스 모델로 남성의 쇼핑 경험을 한 단계 진화시키며 이커머스 업계의 선구자로 자리 잡는가 하면 온라인상의 판매 카테고리를 기존 패션군에서 파인 워치, 자동차까지 확장하며 단순 쇼핑몰을 넘어 라이프스타일상을 제안하는 브랜드로 자리매김하고 있습니다.</p>
+                    </div>
+                    <div class="desc-item gift">
+                      <a href="https://magazine-b.com/product/detail.html?product_no=348&amp;cate_no=57" class="btn-text"></a>
+                    </div>
+                  </p>
+                </div>
+            </div>
+          <div class="section-item">
+              <div class="image">
+                  <a href="/product/detail.html?product_no=81&amp;cate_no=44" class="link">
+                    <img class="ano-img" src="https://bmagazine.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2022/05/15044103/B_51.jpg" alt="" class="max"></a>
+              </div>
+              <div class="content">
+                  <span class="label-category">MAGAZINE B</span><span class="label issue-no">ISSUE NO.50</span>
+                  <h4 class="title">
+                      <a href="/product/detail.html?product_no=81&amp;cate_no=44" class="link">SEOUL 2ND EDITION</a>
+                  </h4>
+                  <p class="desc"><div class="desc-item-fixed">
+                  <p>서울은 인구 1천만 명의 메가시티 이자 대한민국의 수도로, 전쟁 이후 비교적 짧은 시간 안에 근대화와 산업화를 이룬 도시입니다. 반도체와 자동차 산업이 만든 경제적 토대를 바탕으로 21세기 새로운 성장동력이 된 IT와 엔터테인먼트 산업은 창조적인 사람을 모으고 키워내며 기민함과 역동성이라는 서울만의 에너지를 만들어왔습니다. 이에 서울의 크리에이티브가 집약된 6개 라이프스타일 신을 통해 전 세계가 주목하는 도시로 떠오른 서울의 현재와 가능성을 바라봅니다.</p>
+              </div>
+            <div class="desc-item gift"><a href="https://magazine-b.com/product/detail.html?product_no=348&amp;cate_no=57" class="btn-text"></a></div></p>
+              </div>
+          </div>
+        </div>
+        <div class="section-link" id="shop-link">
+          <a class="section-link-shop" href="/magazine/list.html?cate_no=44">Shop 
+            <img src="https://magazine-b.com/web/baton/images/home/icon_home_shop_arrow.svg" alt="" class="icon"></a>
+        </div>
+
+
+    </section>
+
+
+    <section class="section-recommend">
+      <div class="recommend-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="date">Thursday,<br />21 Sep<br />2023</div>
+            </div>
+            <div class="col-xl-9">
+              <div
+                class="recommend-item-container"
+                id="recommend-item-container"
+              >
+                <div class="recommend-col" data-col-no="3">
+                  <div class="recommend-item">
+                    <a
+                      href="https://open.spotify.com/playlist/52wf2TYh5oy5vvbXov2kTR"
+                      class="link"
+                      target="_blank"
+                    >
+                      <span class="label">B PLAYLIST</span>
+                      <p class="title">
+                        Taeil Park’s Playlist From Issue No.94 Barbour
+                      </p>
+                      <p class="desc">
+                        매거진 B 94번째 이슈 ‘Barbour’의 인터뷰이로 참여한
+                        벨보이 크리에이티브 디렉터 박태일의 플레이리스트.
+                      </p>
+                    </a>
+                    
+                  </div>
+                  <div class="recommend-item">
+                    <a
+                      href="https://www.podbbang.com/channels/13074/episodes/23945359"
+                      class="link"
+                      target="_blank"
+                    >
+                      <span class="label">B CAST</span>
+                      <p class="title">[Chapter 110] Wilson</p>
+                      <p class="desc">
+                        역동적이고 강인한 이미지를 강조하는 대부분의 스포츠
+                        브랜드와 달리 친근한 이미지를 함께 구축하며 브랜드를
+                        차별화하고 있는 윌슨 Wilson의 이야기
+                      </p>
+                    </a>
+                  </div>
+                  <div class="recommend-item newsletter-item">
+                    <a
+                      href="https://stibee.com/api/v1.0/emails/share/QmKBON5R6ojVjWvX2HB2T-CmOCUXIzc"
+                      class="link"
+                      target="_blank"
+                    >
+                      <span class="label">NEWSLETTER</span>
+                      <p class="title">
+                        A New Renaissance in Busan, the City of the Sea
+                      </p>
+                      <p class="desc">
+                        부산에서 시작한 로컬 브랜드, 부산만의 특색있는 거리,
+                        부산을 기반으로 활동하는 예술가 등 다양한 각도에서
+                        바라본 부산의 이야기
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="recommend-col" data-col-no="0">
+                  <div class="recommend-item newsletter-item">
+                    <a
+                      href="https://stibee.com/api/v1.0/emails/share/WJVGz65s5oNdxfnH1i3h4BJvNIApw6U"
+                      class="link"
+                      target="_blank"
+                    >
+                      <span class="label">NEWSLETTER</span>
+                      <p class="title">
+                        Seoul, a city constantly transforming between the past
+                        and the future
+                      </p>
+                      <p class="desc">
+                        매거진 &lt;B&gt; '서울' 개정판 이슈 발행 이후, 브랜드의
+                        행보를 통해 살펴본 서울의 변화들.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="recommend-item newsletter-item">
+                    <a
+                      href="https://stibee.com/api/v1.0/emails/share/A2IoA-c8rbf3iFI78VgvEeVVb5elMhI"
+                      class="link"
+                      target="_blank"
+                    >
+                      <span class="label">NEWSLETTER</span>
+                      <p class="title">
+                        How can we prepare for the upcoming Autumn?
+                      </p>
+                      <p class="desc">
+                        다가올 가을과 겨울을 만족스럽게 보내기 위해 &lt;B&gt;
+                        멤버 다섯 명이 구매한 아이템들
+                      </p>
+                    </a>
+                  </div>
+                  <div class="recommend-item">
+                    <a
+                      href="https://www.podbbang.com/channels/13074/episodes/22578153"
+                      class="link"
+                      target="_blank"
+                    >
+                      <span class="label">B CAST</span>
+                      <p class="title">
+                        [Episode 33] MAGAZINE F SPECIAL (part 2)
+                      </p>
+                      <p class="desc">
+                        국내에서 델리미트를 직접 만들어 파는 '소금집' 장대원
+                        대표가 이야기하는 크래프트맨십과 비즈니스
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer id="footer"><div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-3 d-none d-lg-block logo-box">
+              <div class="footer-logo">
+                  <a href="/">
+                      <img src="	https://magazine-b.com/web/baton/images/footer_logo.png" alt="로고" class="max">
+                  &nbsp;</a>
+              </div>
+          </div>
+          <div class="col-lg-9 menu-box">
+              <div class="footer-menu">
+                  <ul class="navi-list"><li class="navi-title c-gray">About Us</li>
+                      <li class="navi-item"><a href="/about/company.html">Company</a></li>
+                      <li class="navi-item"><a href="/about/contact.html">Contact</a></li>
+                      <li class="navi-item"><a href="/about/media-service.html">Media &amp; Service</a></li>
+                      <li class="navi-item"><a href="/about/partnership.html">Partnership</a></li>
+                      <li class="navi-item"><a href="/about/stockists.html">Stockists</a></li>
+                  </ul><ul class="navi-list"><li class="navi-title c-gray">Customer Service</li>
+                      <li class="navi-item"><a href="/cs/inquiry.html">Inquiry</a></li>
+                      <li class="navi-item"><a href="/cs/faq.html">FAQ</a></li>
+                      <li class="navi-item"><a href="/cs/notice.html">Notice</a></li>
+                  </ul><ul class="navi-list"><li class="navi-title c-gray">SNS</li>
+                      <li class="navi-item"><a href="https://www.instagram.com/magazine.b/" target="_blank">Instagram<img src="https://magazine-b.com/web/baton/images/icon/icon_footer_link.png"></a></li>
+                      <li class="navi-item"><a href="https://www.facebook.com/Brand.Magazine.B/" target="_blank">Facebook<img src="https://magazine-b.com/web/baton/images/icon/icon_footer_link.png"></a></li>
+                      <li class="navi-item"><a href="https://www.youtube.com/user/MagazineB" target="_blank">Youtube<img src="https://magazine-b.com/web/baton/images/icon/icon_footer_link.png"></a></li>
+                  </ul><ul class="navi-list"><li class="navi-title c-gray">Follow Us</li>
+                      <li class="navi-item"><a href="https://www.podbbang.com/channels/13074" target="_blank">B Cast<img src="https://magazine-b.com/web/baton/images/icon/icon_footer_link.png"></a></li>
+                      <li class="navi-item"><a href="https://music.apple.com/kr/curator/magazine-b/1256176657" target="_blank">B Playlist<img src="https://magazine-b.com/web/baton/images/icon/icon_footer_link.png"></a></li>
+                  </ul></div>
+          </div>
+
+          
+      </div>
+  </div>    
+</footer>
   </body>
 </html>
