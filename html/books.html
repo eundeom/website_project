@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/books.css" />
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inter:wght@300;400;500;600&family=Oswald&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>books.html</title>
   </head>
   <body>
@@ -10,9 +18,9 @@
       <div class="navBar">
         <div class="navBar-item logo">
           <img
-            src="https://magazine-b.com/web/baton/images/header_logo_white.svg"
+            src="https://magazine-b.com/web/baton/images/header_logo.svg"
             alt=""
-            class="white-logo"
+            class="black-logo"
           />
         </div>
         <div class="navBar-item">
@@ -57,5 +65,425 @@
         </div>
       </div>
     </header>
+
+    <!-- list -->
+    <div id="magazine-cate-list" class="page page-product-list">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              id="sticky-navi"
+              class="product-list-navi"
+              style="position: sticky; top: 108px; height: 682px"
+            >
+              <ul class="category-list">
+                <li data-cate-no="44" class="category-item transition selected">
+                  <a class="category-item-link transition">Magazine B </a>
+                </li>
+                <li data-cate-no="45" class="category-item transition selected">
+                  <a class="category-item-link transition">Magazine F </a>
+                </li>
+                <li data-cate-no="47" class="category-item transition selected">
+                  <a class="category-item-link transition">Fashion </a>
+                </li>
+                <li data-cate-no="77" class="category-item transition selected">
+                  <a class="category-item-link transition">Beauty </a>
+                </li>
+                <li data-cate-no="48" class="category-item transition selected">
+                  <a class="category-item-link transition">Design·Lifestyle </a>
+                </li>
+                <li data-cate-no="46" class="category-item transition selected">
+                  <a class="category-item-link transition">Food </a>
+                </li>
+                <li data-cate-no="51" class="category-item transition selected">
+                  <a class="category-item-link transition">Tech </a>
+                </li>
+                <li data-cate-no="52" class="category-item transition selected">
+                  <a class="category-item-link transition">Media </a>
+                </li>
+                <li data-cate-no="72" class="category-item transition selected">
+                  <a class="category-item-link transition">Hospitality </a>
+                </li>
+              </ul>
+              <div
+                class="xans-element- xans-product xans-product-normalmenu sort-navi"
+              >
+                <div class="total navi-item">
+                  <span>TOTAL&nbsp;</span> <span>124</span>
+                </div>
+                <div class="sort navi-item">
+                  <select id="selArray" name="selArray">
+                    <option value="sort-by">SORT BY</option>
+                    <option value="price-desc">높은가격</option>
+                    <option value="price-asc">낮은가격</option>
+                  </select>
+                </div>
+                <div class="sort-text"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- books -->
+          <div class="col-md-6">
+            <div class="product-list-wrap shop-list-p">
+              <div>
+                <div class="productList typeThumb ec-base-product">
+                  <ul class="prdList view-list">
+                    <li id="product-item354" class="product-item">
+                      <div class="inner">
+                        <div class="thumbnail">
+                          <div class="thumb-item">
+                            <div class="icons">
+                              <img
+                                src="https://magazine-b.com/web/upload/custom_116587290569101.gif"
+                                alt=""
+                                class="icon-item"
+                              />
+                              &nbsp;
+                            </div>
+                            <a
+                              href="/product/detail.html?product_no=354&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/big/202309/83313b37091cde6dc87ba65f818ba2fd.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=354&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/medium/202309/9f1e51b4f6a77cf058a750141f1c69eb.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <span class="wish displaynone"></span>
+                        </div>
+                        <div class="description">
+                          <div class="info d-flex">
+                            <p class="name">
+                              <!---->
+                              <a
+                                href="/product/detail.html?product_no=354"
+                                class="{$product_name_display|display}"
+                                >SPICE</a
+                              >
+                              <span class="summary">ISSUE NO.28</span>
+                              <span class="category">Magazine F</span>
+                            </p>
+                            <div class="product-price discounted">
+                              <div class="d-flex">
+                                <p class="price d-none d-sm-block">₩16,200</p>
+                                <!-- <p class="price d-block d-sm-none">₩16,200</p> -->
+                                <p class="price sale strike">₩18,000</p>
+                                <p class="price sale discount-ratio">10% OFF</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="add-button d-flex">
+                            <div class="add-cart btn-text">ADD TO CART</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="product-item122" class="product-item">
+                      <div class="inner">
+                        <div class="thumbnail">
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=122&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/big/202303/7a11a83d6414de897cbe1229fb9533d8.jpg"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=122&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/medium/202303/037555398b7b4efeeec72567e182aa46.jpg"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <span class="wish displaynone"></span>
+                        </div>
+                        <div class="description">
+                          <div class="info d-flex">
+                            <p class="name">
+                              <!---->
+                              <a
+                                href="/product/detail.html?product_no=122"
+                                class="{$product_name_display|display}"
+                                >ICE CREAM</a
+                              >
+                              <span class="summary">ISSUE NO.17</span>
+                              <span class="category">Magazine F</span>
+                            </p>
+                            <div class="product-price discounted">
+                              <div class="d-flex">
+                                <p class="price d-none d-sm-block">₩13,500</p>
+                                <!-- <p class="price d-block d-sm-none">₩13,500</p> -->
+                                <p class="price sale strike">₩15,000</p>
+                                <p class="price sale discount-ratio">10% OFF</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="add-button d-flex">
+                            <div class="add-cart btn-text">ADD TO CART</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="product-item331" class="product-item">
+                      <div class="inner">
+                        <div class="thumbnail">
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=331&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/big/202304/ef973486df669b2e1c2c4bdfdc2576c1.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=331&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/medium/202304/1cee09b2e8827a6969e1090b27c684ba.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <span class="wish displaynone"></span>
+                        </div>
+                        <div class="description">
+                          <div class="info d-flex">
+                            <p class="name">
+                              <!---->
+                              <a
+                                href="/product/detail.html?product_no=331"
+                                class="{$product_name_display|display}"
+                                >BREAD</a
+                              >
+                              <span class="summary">ISSUE NO.26</span>
+                              <span class="category">Magazine F</span>
+                            </p>
+                            <div class="product-price discounted">
+                              <div class="d-flex">
+                                <p class="price d-none d-sm-block">₩16,200</p>
+                                <!-- <p class="price d-block d-sm-none">₩16,200</p> -->
+                                <p class="price sale strike">₩18,000</p>
+                                <p class="price sale discount-ratio">10% OFF</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="add-button d-flex">
+                            <div class="add-cart btn-text">ADD TO CART</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="product-item344" class="product-item">
+                      <div class="inner">
+                        <div class="thumbnail">
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=344&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/big/202307/595bb0dd40156ac71cb7e1ab524aabcc.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=344&amp;cate_no=45"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/medium/202307/504c71edb789a255598181020a0821b7.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <span class="wish displaynone"></span>
+                        </div>
+                        <div class="description">
+                          <div class="info d-flex">
+                            <p class="name">
+                              <!---->
+                              <a
+                                href="/product/detail.html?product_no=344"
+                                class="{$product_name_display|display}"
+                                >FISH</a
+                              >
+                              <span class="summary">ISSUE NO.27</span>
+                              <span class="category">Magazine F</span>
+                            </p>
+                            <div class="product-price discounted">
+                              <div class="d-flex">
+                                <p class="price d-none d-sm-block">₩16,200</p>
+                                <!-- <p class="price d-block d-sm-none">₩16,200</p> -->
+                                <p class="price sale strike">₩18,000</p>
+                                <p class="price sale discount-ratio">10% OFF</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="add-button d-flex">
+                            <div class="add-cart btn-text">ADD TO CART</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="product-item342" class="product-item">
+                      <div class="inner">
+                        <div class="thumbnail">
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=342&amp;cate_no=44"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/big/202306/324544261045c9b67f57b4f5b03c5dda.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=342&amp;cate_no=44"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/medium/202306/b56dbab4967e82a7283812577f37c865.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <span class="wish displaynone"></span>
+                        </div>
+                        <div class="description">
+                          <div class="info d-flex">
+                            <p class="name">
+                              <!---->
+                              <a
+                                href="/product/detail.html?product_no=342"
+                                class="{$product_name_display|display}"
+                                >Spotify</a
+                              >
+                              <span class="summary">ISSUE NO.95</span>
+                              <span class="category">Magazine B</span>
+                            </p>
+                            <div class="product-price discounted">
+                              <div class="d-flex">
+                                <p class="price d-none d-sm-block">₩18,000</p>
+                                <!-- <p class="price d-block d-sm-none">₩18,000</p> -->
+                                <p class="price sale strike">₩20,000</p>
+                                <p class="price sale discount-ratio">10% OFF</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="add-button d-flex">
+                            <div class="add-cart btn-text">ADD TO CART</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="product-item332" class="product-item">
+                      <div class="inner">
+                        <div class="thumbnail">
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=332&amp;cate_no=44"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/big/202305/33813f7d102fd59dfb98883544948e98.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <div class="thumb-item">
+                            <a
+                              href="/product/detail.html?product_no=332&amp;cate_no=44"
+                              name="anchorBoxName_{$product_no}"
+                              ><img
+                                src="https://magazine-b.com/web/product/medium/202305/9634d057c7fe2ec1b8dcf7805cf108ef.png"
+                                id="{$image_medium_id}"
+                                alt=""
+                                class="thumb"
+                            /></a>
+                          </div>
+                          <span class="wish displaynone"></span>
+                        </div>
+                        <div class="description">
+                          <div class="info d-flex">
+                            <p class="name">
+                              <!---->
+                              <a
+                                href="/product/detail.html?product_no=332"
+                                class="{$product_name_display|display}"
+                                >Barbour</a
+                              >
+                              <span class="summary">ISSUE NO.94</span>
+                              <span class="category">Magazine B</span>
+                            </p>
+                            <div class="product-price discounted">
+                              <div class="d-flex">
+                                <p class="price d-none d-sm-block">₩18,000</p>
+                                <!-- <p class="price d-block d-sm-none">₩18,000</p> -->
+                                <p class="price sale strike">₩20,000</p>
+                                <p class="price sale discount-ratio">10% OFF</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="add-button d-flex">
+                            <div class="add-cart btn-text">ADD TO CART</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="productPaginate typeList pagination light-theme simple-pagination"
+              >
+                <ul>
+                  <li class="disabled">
+                    <span class="current prev">Prev</span>
+                  </li>
+                  <li class="active"><span class="current">1</span></li>
+                  <li><a href="2" class="page-link">2</a></li>
+                  <li><a href="3" class="page-link">3</a></li>
+                  <li class=""><span class="ellipse clickable">…</span></li>
+                  <li><a href="6" class="page-link">6</a></li>
+                  <li><a href="7" class="page-link">7</a></li>
+                  <li><a href="2" class="page-link next">Next</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
