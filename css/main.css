@@ -66,7 +66,7 @@ a {
 .subNav-item {
   padding: 18px;
   font-size: 17.5px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
   font-family: "Inter", sans-serif;
   padding-left: 0.7em;
@@ -235,8 +235,9 @@ div.swiper-scrollbar-drag {
   margin-bottom: 20px;
 }
 .image img {
-  width: 294px;
-  height: 220.5px;
+  /* width: 294px;
+  height: 220.5px; */
+  width: 100%;
 }
 .content .label-category {
   font-size: 14px;
@@ -286,8 +287,10 @@ div.swiper-scrollbar-drag {
 }
 
 .section-item .image .ano-img {
-  width: 294px;
-  height: 392px;
+  /* width: 294px; */
+  /* height: 392px; */
+  width: 90%;
+  height: 100%;
 }
 .section-link {
   margin-top: 170px;
@@ -465,8 +468,10 @@ div.recommend-item-container.recommend-item-container {
 
 /* footer */
 img.max {
-  width: 294px;
-  height: 220.5px;
+  /* width: 294px;
+  height: 220.5px; */
+  width: 90%;
+  height: auto;
 }
 div.footer-menu a {
   color: black;
@@ -505,6 +510,7 @@ ul.navi-list {
   padding: 0 17.5px;
   width: 80px;
   height: 90px;
+  display: inline;
 }
 div.col-lg-3.d-none.d-lg-block.logo-box {
   padding: 0 17.5px;
@@ -565,9 +571,30 @@ div.col-lg-3.d-none.d-lg-block.logo-box {
   ul.navi-item {
     font-size: 20.3px;
   }
+  .navBar-item#dnone1 {
+    display: none;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
+  .navBar-item#dnone2 {
+    display: none;
+  }
+  p.category {
+    position: absolute;
+    transform: translate(2%, 2000%);
+  }
+  h2.title {
+    position: absolute;
+    transform: translate(0%, 525%);
+    font-size: 70px;
+  }
+  a.a-shop {
+    position: absolute;
+    transform: translate(3%, 2510%);
+  }
+}
+@media (max-width: 770px) {
   .section-main .section-item:nth-child(1),
   .section-main .section-item:nth-child(2) {
     display: block !important;
@@ -607,6 +634,39 @@ div.col-lg-3.d-none.d-lg-block.logo-box {
     left: 0;
     transform: translate(0, 0);
     padding: 0 1.25rem 2.5rem 1.25rem;
+  }
+  p.category {
+    position: absolute;
+    transform: translate(-20%, -400%);
+    display: flex;
+  }
+  h2.title {
+    position: absolute;
+    transform: translate(-18%, -150%);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    /* text-underline-position: under; */
+    text-underline-offset: 6px;
+  }
+  a.a-shop {
+    display: none;
+  }
+  span.category-1,
+  span.category-2 {
+    /* display: none; */
+    width: 100px;
+    transform: translate(10%, -350%);
+  }
+  /* div.section-list .image {
+    width: 90%;
+  } */
+  div.section-item {
+    width: 90%;
+  }
+  .desc-item-fixed p {
+    width: 90%;
+    overflow: auto;
+    font-size: 18px;
   }
 }
 

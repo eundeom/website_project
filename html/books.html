@@ -14,7 +14,7 @@
     <title>books.html</title>
   </head>
   <body>
-    <header id="container">
+    <header id="container" style="position: fixed">
       <div class="navBar">
         <div class="navBar-item logo">
           <img
@@ -23,25 +23,25 @@
             class="black-logo"
           />
         </div>
-        <div class="navBar-item">
+        <div class="navBar-item" id="dnone">
           <a href="#">New</a>
         </div>
-        <div class="navBar-item">
+        <div class="navBar-item" id="dnone">
           <a href="#">Magazine</a>
         </div>
-        <div class="navBar-item">
-          <a href="#">Books</a>
+        <div class="navBar-item" id="dnone">
+          <a href="./html/books.html">Books</a>
         </div>
-        <div class="navBar-item">
+        <!-- <div class="navBar-item" id="dnone">
           <a href="#">Goods&Tickets</a>
         </div>
-        <div class="navBar-item">
+        <div class="navBar-item" id="dnone">
           <a href="#">Newletter</a>
-        </div>
-        <div class="navBar-item">
+        </div> -->
+        <div class="navBar-item" id="dnone2">
           <a href="#">Index</a>
         </div>
-        <div class="navBar-item">
+        <div class="navBar-item" id="dnone1">
           <a href="#">Subscribe</a>
         </div>
       </div>
@@ -168,9 +168,7 @@
                           <div class="info d-flex">
                             <p class="name">
                               <!---->
-                              <a
-                                href="/product/detail.html?product_no=354"
-                                class="{$product_name_display|display}"
+                              <a href="/product/detail.html?product_no=354"
                                 >SPICE</a
                               >
                               <span class="summary">ISSUE NO.28</span>
