@@ -18,11 +18,13 @@
     <header id="container" style="position: fixed">
       <div class="navBar">
         <div class="navBar-item logo">
-          <img
-            src="https://magazine-b.com/web/baton/images/header_logo.svg"
-            alt=""
-            class="black-logo"
-          />
+          <a href="../index.html">
+            <img
+              src="https://magazine-b.com/web/baton/images/header_logo.svg"
+              alt=""
+              class="black-logo"
+            />
+          </a>
         </div>
         <div class="navBar-item" id="dnone">
           <a href="#">New</a>
@@ -78,31 +80,33 @@
               style="position: sticky; top: 108px; height: 682px"
             >
               <ul class="category-list">
-                <li data-cate-no="44" class="category-item transition selected">
-                  <a class="category-item-link transition">Magazine B </a>
+                <li class="category-item transition selected">
+                  <a class="category-item-link transition" href="./books.html"
+                    >Magazine B
+                  </a>
                 </li>
-                <li data-cate-no="45" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Magazine F </a>
                 </li>
-                <li data-cate-no="47" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Fashion </a>
                 </li>
-                <li data-cate-no="77" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Beauty </a>
                 </li>
-                <li data-cate-no="48" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Design·Lifestyle </a>
                 </li>
-                <li data-cate-no="46" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Food </a>
                 </li>
-                <li data-cate-no="51" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Tech </a>
                 </li>
-                <li data-cate-no="52" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Media </a>
                 </li>
-                <li data-cate-no="72" class="category-item transition selected">
+                <li class="category-item transition selected">
                   <a class="category-item-link transition">Hospitality </a>
                 </li>
               </ul>
@@ -110,13 +114,13 @@
                 class="xans-element- xans-product xans-product-normalmenu sort-navi"
               >
                 <div class="total navi-item">
-                  <span>TOTAL&nbsp;</span> <span>124</span>
+                  <span>TOTAL&nbsp;</span> <span>6</span>
                 </div>
-                <div class="sort navi-item">
+                <div class="sort navi-item" id="sort-navi-item">
                   <select id="selArray" name="selArray">
-                    <option value="sort-by">SORT BY</option>
-                    <option value="price-desc">높은가격</option>
-                    <option value="price-asc">낮은가격</option>
+                    <option value="sort-by">sort by</option>
+                    <option value="price-desc">high price</option>
+                    <option value="price-asc">low price</option>
                   </select>
                 </div>
                 <div class="sort-text"></div>
@@ -463,6 +467,55 @@
                   </ul>
                 </div>
               </div>
+
+              <!-- sort -->
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const sortSelect = document.getElementById("selArray");
+                  const ulElement =
+                    document.querySelector(".prdList.view-list");
+                  const listItems = Array.from(
+                    ulElement.querySelectorAll(".product-item")
+                  );
+
+                  // get price
+                  function extractPrice(item) {
+                    const priceElement = item.querySelector(
+                      ".price.d-none.d-sm-block"
+                    );
+                    if (priceElement) {
+                      return parseInt(
+                        priceElement.textContent.replace(/[^\d]/g, ""),
+                        10
+                      );
+                    }
+                    return 0;
+                  }
+
+                  // sort
+                  function sortItems() {
+                    const selectedValue = sortSelect.value;
+                    if (selectedValue === "price-desc") {
+                      // sort by a hight price
+                      listItems.sort(
+                        (a, b) => extractPrice(b) - extractPrice(a)
+                      );
+                    } else if (selectedValue === "price-asc") {
+                      // sort by a low price
+                      listItems.sort(
+                        (a, b) => extractPrice(a) - extractPrice(b)
+                      );
+                    }
+
+                    listItems.forEach((item) => ulElement.appendChild(item));
+                  }
+
+                  sortSelect.addEventListener("change", sortItems);
+
+                  sortItems();
+                });
+              </script>
+
               <div
                 class="productPaginate typeList pagination light-theme simple-pagination"
               >

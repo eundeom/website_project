@@ -138,6 +138,7 @@ div#sticky-navi.product-list-navi {
   margin-right: 2.5rem;
 }
 .sort-navi .sort select {
+  /* #sort-navi-item select { */
   font-size: 1rem;
   font-weight: 500;
   color: #222;
@@ -366,7 +367,9 @@ a.category-item-link.transition:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  color: #0084ff;
+  /* color: #ff00aa; */
 }
 a.category-item-link.transition:hover::after {
   content: "✹";
