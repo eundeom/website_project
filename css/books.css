@@ -69,7 +69,6 @@ a {
   /* overflow: hidden; */
 }
 .back-img img {
-  /* display: block; */
   width: 100%;
 }
 
@@ -201,9 +200,6 @@ img.thumb:hover {
   padding-bottom: 0.1rem;
   border-bottom: 1px solid #222;
 }
-/* .shop-list-p {
-  padding-left: 3.75rem;
-} */
 .ec-base-product .thumbnail {
   display: flex;
   position: relative;

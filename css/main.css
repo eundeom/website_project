@@ -1,7 +1,10 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
 }
+
+/* first section */
 .section-first {
   font-family: "Inter", sans-serif;
 }
@@ -96,7 +99,7 @@ img.ano-img:hover {
   z-index: 1;
   text-align: left;
 }
-/* 수정 */
+
 .img-area {
   position: relative;
   top: 0;
@@ -138,20 +141,15 @@ img.ano-img:hover {
   opacity: 0.9;
 }
 .back-img img {
-  /* display: block; */
   width: 100%;
 }
 .text-area {
   color: white;
   position: relative;
-  /* position: inherit; */
   top: -530px;
-  /* left: 80px; */
   margin-left: 80px;
-  /* width: 100%; */
   z-index: 999;
   height: 0;
-  /* overflow: hidden; */
   .title {
     font-size: 4em;
     margin: 1px;
@@ -235,7 +233,6 @@ img.ano-img:hover {
   animation-play-state: running;
   text-decoration: underline;
   text-decoration-thickness: 4.5px;
-  /* text-underline-position: under; */
   text-underline-offset: 15px;
 }
 
@@ -247,8 +244,6 @@ img.ano-img:hover {
   margin-bottom: 20px;
 }
 .image img {
-  /* width: 294px;
-  height: 220.5px; */
   width: 100%;
 }
 .content .label-category {
@@ -287,6 +282,7 @@ img.ano-img:hover {
 .section-main {
   height: 1320px;
   background-color: #98c0c4;
+  transition: background-color 0.5s ease;
 }
 .section-list {
   display: flex;
@@ -324,11 +320,8 @@ img.ano-img:hover {
   font-weight: 500;
   font-size: 4rem;
   line-height: 1.156;
-  /* font-family: "Beausite-Medium", "SUIT-Regular", "Noto Sans KR",
-    "Apple SD Gothic Neo", "malgun gothic", sans-serif !important; */
 
   font-family: "Inter", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 .recommend-section .recommend-item-container .recommend-item .label::before {
@@ -358,12 +351,10 @@ img.ano-img:hover {
 
 .section-main {
   font-family: "Inter", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 .section-recommend .date {
   font-family: "Inter", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
 }
 .recommend-item-container a {
   font-family: "Inter", sans-serif;
@@ -482,25 +473,10 @@ div.recommend-item-container.recommend-item-container {
 
 /* footer */
 img.max {
-  /* width: 294px;
-  height: 220.5px; */
   width: 90%;
   height: auto;
-
-  /* position: absolute;
-  top: auto;
-  animation: transY 2s ease-in-out;
-  @keyframes transY {
-    0% {
-      transform: translateY(400px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  } */
 }
+
 div.footer-menu a {
   color: black;
 }
@@ -684,13 +660,9 @@ div.col-lg-3.d-none.d-lg-block.logo-box {
   }
   span.category-1,
   span.category-2 {
-    /* display: none; */
     width: 100px;
     transform: translate(10%, -350%);
   }
-  /* div.section-list .image {
-    width: 90%;
-  } */
   div.section-item {
     width: 90%;
   }

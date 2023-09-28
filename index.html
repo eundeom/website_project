@@ -11,6 +11,7 @@
     <title>main.html</title>
   </head>
   <body>
+    <!-- header -->
     <header id="container" style="position: fixed;">
       <div class="navBar">
         <div class="navBar-item logo">
@@ -68,6 +69,7 @@
       </div>
     </header>
 
+    <!-- first section -- image -->
     <section class="section-first">
       <div class="page page-home">
         <div class="img-area">
@@ -95,10 +97,6 @@
                 class="more-info c-gray"
                 >SHOP NOW</a
               >
-              <!-- <div class="swipe-num">
-                <h1 class="current-page">1</h1>
-                <h1 class="total-page">3</h1>
-              </div> -->
             </div>
           </div>
           <div class="back-img" id="image2">
@@ -125,10 +123,6 @@
                 class="more-info c-gray"
                 >SHOP NOW</a
               >
-              <!-- <div class="swipe-num">
-                <h1 class="current-page">2</h1>
-                <h1 class="total-page">3</h1>
-              </div> -->
             </div>
           </div>
           
@@ -156,16 +150,12 @@
                 class="more-info c-gray"
                 >SHOP NOW</a
               >
-              <!-- <div class="swipe-num">
-                <h1 class="current-page">3</h1>
-                <h1 class="total-page">3</h1>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
       
-
+      <!-- image slide show -->
       <script>
         const images = ["image1", "image2", "image3"];
 
@@ -190,51 +180,38 @@
 
         setInterval(changeImage, 3000);
       </script>
-      <div class="swiper-scrollbar">
-        <div
-          class="swiper-scrollbar-drag"
-          style="
-            width: 402.333px;
-            transform: translate3d(0px, 0px, 0px);
-            transition-duration: 0ms;
-          "
-        ></div>
-      </div>
     </section>
 
     <!-- shop section -->
-    <section class="section-main">
+    <section class="section-main" id="section-main">
       <div class="pc-title">
         <h4 class="section-title">Shop</h4>
         <ul class="section-menu" id="shop-menu">
           <div class="sm1">
-            <li class="menu-item" data-cate-no="44">
+            <li class="menu-item" onclick="changeColor('#98c0c4')">
               <span class="active" id="anoGreen">Magazine B</span>
             </li>
-            <li class="menu-item" data-cate-no="45">
+            <li class="menu-item" onclick="changeColor('#f7e48e')">
               <span id="yellow">Magazine F</span>
             </li>
           </div>
           <div class="sm2">
-            <li class="menu-item" data-cate-no="47">
+            <li class="menu-item" onclick="changeColor('#ced4e2')">
               <span id="skyBlue">Fashion</span>
             </li>
-            <li class="menu-item" data-cate-no="72">
+            <li class="menu-item" onclick="changeColor('#d1ffcc')">
               <span id="green">Hospitality</span>
             </li>
           </div>
         </ul>
       </div>
       <script>
-        var magaF = document.getElementById("section-main");
-        function changeColor(){
-          const changeId = document.getElementById("section-main");
-          
+        function changeColor(color){
+          const sectionMain = document.getElementById('section-main');
+          sectionMain.style.backgroundColor = color;
         }
-        magaF.addEventListener("click", (e) => {
-          document.body.style.backgroundColor = "#f7e48e";
-        });
       </script>
+      
 
 
       <!-- section list -- MAGAZINE B -->
