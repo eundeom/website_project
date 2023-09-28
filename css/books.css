@@ -368,13 +368,27 @@ p.name {
 }
 a.category-item-link.transition:hover {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 6px;
-
-  /* -webkit-transform: scale(0.3);
-  transform: scale(0.3);
-  -webkit-transition: 0.3 ease-in-out;
-  transition: 0.3 ease-in-out; */
+  opacity: 0.7;
+}
+a.category-item-link.transition:hover::after {
+  content: "✹";
+}
+a.category-item-link.transition:hover {
+  direction: rtl;
+}
+.ec-base-product .thumbnail {
+  position: relative;
+  animation: mymove 2s;
+}
+@keyframes mymove {
+  from {
+    top: 50px;
+  }
+  to {
+    top: 0px;
+  }
 }
 
 /* media query */

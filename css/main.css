@@ -34,6 +34,28 @@ a {
   /* text-underline-position: under; */
   text-underline-offset: 6px;
 }
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* .pc-title .menu-item:hover { */
+img.max:hover {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+img.ano-img:hover {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 
 #container {
   display: flex;
@@ -98,33 +120,6 @@ a {
   background-position: top;
   clear: both;
 }
-/* swipe bar */
-/* .page-home .main-banner .home-swiper {
-  width: 100%;
-  height: 100%;
-}
-.page-home .swiper-scrollbar {
-  width: 100%;
-  height: 5px;
-  left: 0;
-  bottom: 0;
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 0;
-}
-.swiper-container-horizontal > .swiper-scrollbar {
-  position: absolute;
-  left: 1%;
-  bottom: 3px;
-  z-index: 50;
-  height: 5px;
-  width: 98%;
-}
-div.swiper-scrollbar-drag {
-  width: 402.333px;
-  transform: translate3d(0px, 0px, 0px);
-  transition-duration: 0ms;
-} */
 .back-img {
   /* position: fixed; */
   top: 0;
@@ -210,6 +205,20 @@ div.swiper-scrollbar-drag {
   font-family: "Inter", sans-serif;
   /* font-family: "Poppins", sans-serif; */
 }
+.date {
+  position: relative;
+  animation: mymove 2s;
+  animation-timing-function: linear;
+  transition-delay: 250ms;
+}
+@keyframes mymove {
+  from {
+    top: 100px;
+  }
+  to {
+    top: 0px;
+  }
+}
 .section-main .section-menu {
   margin-bottom: 100px;
   margin-left: 40px;
@@ -221,12 +230,15 @@ div.swiper-scrollbar-drag {
   padding-right: 15px;
   margin-left: -10px;
 }
+
 .section-main .section-menu .menu-item:hover {
+  animation-play-state: running;
   text-decoration: underline;
   text-decoration-thickness: 4.5px;
   /* text-underline-position: under; */
   text-underline-offset: 15px;
 }
+
 .pc-title .section-title {
   /* 상우하좌 */
   margin: 0 0 35px 40px;
@@ -434,6 +446,7 @@ div.date {
   justify-content: start;
   margin-left: -1rem;
   margin-right: -1rem;
+  animation-direction: normal;
 }
 .label {
   font-size: 14px;
@@ -472,6 +485,20 @@ img.max {
   height: 220.5px; */
   width: 90%;
   height: auto;
+
+  /* position: absolute;
+  top: auto;
+  animation: transY 2s ease-in-out;
+  @keyframes transY {
+    0% {
+      transform: translateY(400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  } */
 }
 div.footer-menu a {
   color: black;
@@ -487,6 +514,9 @@ div.footer-menu a {
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 1.3;
+}
+.navi-item:hover {
+  opacity: 0.5;
 }
 footer .footer-menu .navi-title {
   font-size: 1rem;
